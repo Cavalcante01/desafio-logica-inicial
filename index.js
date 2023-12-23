@@ -1,7 +1,7 @@
-let nome = "cavalcante"; 
-let experiencia = 0.20; 
+let nome = "cavalcante";
+let experiencia = 0.20;
 
-if (experiencia <=1000) {
+if (experiencia <= 1000) {
     nivel = "Ferro";
 } if (experiencia <= 2000) {
     nivel = "Bronze";
@@ -14,9 +14,10 @@ if (experiencia <=1000) {
         case (experiencia <= 8000):
             nivel = "Platina";
         case (experiencia <= 9000):
-            nivel = "Ascendente";    
+            nivel = "Ascendente";
         case (experiencia <= 10000):
             nivel = "Imortal";
+        case (experiencia <= 10.001):
             nivel = "Radiante";
             break;
     }
