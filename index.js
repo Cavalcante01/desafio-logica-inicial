@@ -1,26 +1,26 @@
 let nome = "cavalcante";
-let experiencia = 0.20;
+let experiencia = 99;
+let nivel;
 
-if (experiencia <= 1.000) {
+if (experiencia <= 1000) {
     nivel = "Ferro";
-} if (experiencia <= 2.000) {
+} else if (experiencia <= 2000) {
     nivel = "Bronze";
-} if (experiencia <= 5.000) {
+} else if (experiencia <= 5000) {
     nivel = "Prata";
+} else if (experiencia <= 7000) {
+    nivel = "Ouro";
+} else if (experiencia <= 8000) {
+    nivel = "Platina";
+} else if (experiencia <= 9000) {
+    nivel = "Ascendente";
+} else if (experiencia <= 10000) {
+    nivel = "Imortal";
+} else if (experiencia <= 10001) {
+    nivel = "Radiante";
 } else {
-    switch (herói) {
-        case (experiencia <= 7.000):
-            nivel = "Ouro";
-        case (experiencia <= 8.000):
-            nivel = "Platina";
-        case (experiencia <= 9.000):
-            nivel = "Ascendente";
-        case (experiencia <= 10.000):
-            nivel = "Imortal";
-        case (experiencia <= 10.001):
-            nivel = "Radiante";
-            break;
-    }
+    nivel = "Nível máximo alcançado";
 }
 
 console.log(`O Herói de nome ${nome} está no nível de ${nivel}`);
+
